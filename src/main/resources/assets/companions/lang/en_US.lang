@@ -1,0 +1,12 @@
+//items
+item.companions:titleItem.name=Companion Title Scroll
+
+//titles
+companions.title_navi=The Missing Link
+companions.title_enchanter=Enchanter
+companions.title_dragon=Mother of Dragons
+companions.title_bat=Batman
+companions.title_butterfly=Nature's Attendant
+
+//tooltips
+companions.tooltip_titleItem=(this has a special rendering effect)

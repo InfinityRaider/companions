@@ -1,0 +1,17 @@
+[
+{
+  "modid": "companions",
+  "name": "Companions",
+  "description": "An addon for Traveller's Gear by BluSunrize that adds title scrolls which give you a companion.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["InfinityRaider"],
+  "credits": "Azanor for Baubles, BluSunrize for Traveller's Gear, VapourDrive for the animated item icon",
+  "logoFile": "",
+  "screenshots": [],
+  "requiredMods": ["Baubles", "TravellersGear"],
+  "dependencies": []
+}
+]
