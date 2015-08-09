@@ -32,7 +32,7 @@ public class DungeonLootHandler {
                 ItemStack stack = list.get(i);
                 int weight = ConfigurationHandler.getDungeonLootWeight(type, Data.titles[i]);
                 if (weight > 0) {
-                    chestGen.addItem(new WeightedRandomChestContent(stack, weight, 1, 1));
+                    chestGen.addItem(new WeightedRandomChestContent(stack, 1, 1, weight));
                 }
             }
         }
