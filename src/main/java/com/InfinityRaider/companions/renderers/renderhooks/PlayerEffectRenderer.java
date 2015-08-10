@@ -4,6 +4,7 @@ import com.InfinityRaider.companions.reference.Data;
 import com.InfinityRaider.companions.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.entity.RenderPlayer;
 import net.minecraft.entity.player.EntityPlayer;
@@ -34,11 +35,27 @@ public abstract class PlayerEffectRenderer {
         return getName().substring(getName().indexOf('_')+1);
     }
 
-    abstract void renderEffects(EntityPlayer player, RenderPlayer renderer, float tick);
+    public float getVerticalOffset(EntityPlayer player) {
+        if(player == Minecraft.getMinecraft().thePlayer) {
+            return  0.15F;
+        } else {
+            return player.isSneaking()?-0.35F:-0.5F;
+        }
+    }
+
+    abstract void renderEffects(EntityPlayer player, RenderPlayer renderer, float partialTick);
+
+    protected void translateToGeneralCoordinates(EntityPlayer player, float partialTick) {
+        double x = player.prevPosX + (player.posX - player.prevPosX)*partialTick;
+        double y = player.prevPosY + (player.posY - player.prevPosY)*partialTick;
+        double z = player.prevPosZ + (player.posZ - player.prevPosZ)*partialTick;
+        GL11.glTranslated(-x, -y, -z);
+    }
 
     protected void rotateToGeneralCoordinates(EntityPlayer player, float partialTick) {
         float yaw = player.prevRenderYawOffset + (player.renderYawOffset-player.prevRenderYawOffset)*partialTick;
         GL11.glRotatef(-yaw, 0, 1, 0);
+        GL11.glRotatef(180, 1, 0, 0);
     }
 
     protected void drawAxisSystem() {

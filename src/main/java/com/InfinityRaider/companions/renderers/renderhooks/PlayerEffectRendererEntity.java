@@ -26,7 +26,7 @@ public abstract class PlayerEffectRendererEntity extends PlayerEffectRenderer {
     }
 
     @Override
-    void renderEffects(EntityPlayer player, RenderPlayer renderer, float tick) {
+    void renderEffects(EntityPlayer player, RenderPlayer renderer, float partialTick) {
         entity.prevPosX = entity.posX;
         entity.prevPosY = entity.posY;
         entity.prevPosZ = entity.posZ;

@@ -33,6 +33,8 @@ public final class RenderPlayerHooks {
         this.registerPlayerEffectRenderer(new PlayerEffectRendererEntityDragon());
         this.registerPlayerEffectRenderer(new PlayerEffectRendererEntityBat());
         this.registerPlayerEffectRenderer(new PlayerEffectRendererButterfly());
+        this.registerPlayerEffectRenderer(new PlayerEffectRendererTrailSparkles() {
+        });
     }
 
     private void registerPlayerEffectRenderer(PlayerEffectRenderer renderer) {

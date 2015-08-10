@@ -6,6 +6,7 @@ public class Data {
             "enchanter",
             "dragon",
             "bat",
-            "butterfly"
+            "butterfly",
+            "sparkleTrail"
     };
 }
