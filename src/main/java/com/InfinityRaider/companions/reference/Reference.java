@@ -6,7 +6,7 @@ public class Reference {
 
     public static final String VER_MAJOR = "0";
     public static final String VER_MINOR = "1";
-    public static final String VER_REVIS = "1";
+    public static final String VER_REVIS = "2";
     public static final String MOD_VERSION = VER_MAJOR + "." + VER_MINOR + "." + VER_REVIS;
     public static final String VERSION = "1.7.10-" + MOD_VERSION;
 

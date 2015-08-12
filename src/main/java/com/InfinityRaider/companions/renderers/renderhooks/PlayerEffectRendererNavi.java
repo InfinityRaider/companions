@@ -112,6 +112,7 @@ public class PlayerEffectRendererNavi extends PlayerEffectRenderer {
         tessellator.addVertexWithUV(-scale, -scale, 0, 1, 0);
         tessellator.addVertexWithUV(-scale, 0, 0, 1, 1);
         //back
+        tessellator.addVertexWithUV(0, 0, 0, 0, 1);
         tessellator.addVertexWithUV(-scale, 0, 0, 1, 1);
         tessellator.addVertexWithUV(-scale, -scale, 0, 1, 0);
         tessellator.addVertexWithUV(0, -scale, 0, 0, 0);
