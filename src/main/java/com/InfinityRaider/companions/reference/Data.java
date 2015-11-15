@@ -7,6 +7,7 @@ public class Data {
             "dragon",
             "bat",
             "butterfly",
-            "sparkleTrail"
+            "sparkleTrail",
+            "railTracer"
     };
 }

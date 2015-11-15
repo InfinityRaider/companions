@@ -7,6 +7,8 @@ companions.title_enchanter=Enchanter
 companions.title_dragon=Mother of Dragons
 companions.title_bat=Batman
 companions.title_butterfly=Nature's Attendant
+companions.title_sparkleTrail=Sparkles!
+companions.title_railTracer=Railtracer
 
 //tooltips
 companions.tooltip_titleItem=(this has a special rendering effect)
